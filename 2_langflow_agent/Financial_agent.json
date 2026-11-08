@@ -1,0 +1,1078 @@
+{
+  "data": {
+    "edges": [
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ChatInput",
+            "id": "ChatInput-oO5uP",
+            "name": "message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "FinanceAgent-nLbOx",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "reactflow__edge-ChatInput-oO5uP{œdataTypeœ:œChatInputœ,œidœ:œChatInput-oO5uPœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-FinanceAgent-nLbOx{œfieldNameœ:œinput_valueœ,œidœ:œFinanceAgent-nLbOxœ,œinputTypesœ:[œMessageœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "ChatInput-oO5uP",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-oO5uPœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "FinanceAgent-nLbOx",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œFinanceAgent-nLbOxœ,œinputTypesœ:[œMessageœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "PostgresChatMemory",
+            "id": "PostgresChatMemory-eFGxv",
+            "name": "memory",
+            "output_types": [
+              "Memory"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "memory",
+            "id": "FinanceAgent-nLbOx",
+            "inputTypes": [
+              "Memory"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "reactflow__edge-PostgresChatMemory-eFGxv{œdataTypeœ:œPostgresChatMemoryœ,œidœ:œPostgresChatMemory-eFGxvœ,œnameœ:œmemoryœ,œoutput_typesœ:[œMemoryœ]}-FinanceAgent-nLbOx{œfieldNameœ:œmemoryœ,œidœ:œFinanceAgent-nLbOxœ,œinputTypesœ:[œMemoryœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "PostgresChatMemory-eFGxv",
+        "sourceHandle": "{œdataTypeœ:œPostgresChatMemoryœ,œidœ:œPostgresChatMemory-eFGxvœ,œnameœ:œmemoryœ,œoutput_typesœ:[œMemoryœ]}",
+        "target": "FinanceAgent-nLbOx",
+        "targetHandle": "{œfieldNameœ:œmemoryœ,œidœ:œFinanceAgent-nLbOxœ,œinputTypesœ:[œMemoryœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "FinanceAgent",
+            "id": "FinanceAgent-nLbOx",
+            "name": "response",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "ChatOutput-2IR4K",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "reactflow__edge-FinanceAgent-nLbOx{œdataTypeœ:œFinanceAgentœ,œidœ:œFinanceAgent-nLbOxœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-2IR4K{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-2IR4Kœ,œinputTypesœ:[œMessageœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "FinanceAgent-nLbOx",
+        "sourceHandle": "{œdataTypeœ:œFinanceAgentœ,œidœ:œFinanceAgent-nLbOxœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ChatOutput-2IR4K",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-2IR4Kœ,œinputTypesœ:[œMessageœ],œtypeœ:œotherœ}"
+      },
+      {
+        "data": {
+          "sourceHandle": {
+            "dataType": "YahooStockPriceTool",
+            "id": "YahooStockPriceTool-Cp7R3",
+            "name": "tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "FinanceAgent-nLbOx",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__YahooStockPriceTool-Cp7R3{œdataTypeœ:œYahooStockPriceToolœ,œidœ:œYahooStockPriceTool-Cp7R3œ,œnameœ:œtoolœ,œoutput_typesœ:[œToolœ]}-FinanceAgent-nLbOx{œfieldNameœ:œtoolsœ,œidœ:œFinanceAgent-nLbOxœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "source": "YahooStockPriceTool-Cp7R3",
+        "sourceHandle": "{œdataTypeœ:œYahooStockPriceToolœ,œidœ:œYahooStockPriceTool-Cp7R3œ,œnameœ:œtoolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "FinanceAgent-nLbOx",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œFinanceAgent-nLbOxœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      },
+      {
+        "data": {
+          "sourceHandle": {
+            "dataType": "YahooDividendTool",
+            "id": "YahooDividendTool-GaAj7",
+            "name": "tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "FinanceAgent-nLbOx",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__YahooDividendTool-GaAj7{œdataTypeœ:œYahooDividendToolœ,œidœ:œYahooDividendTool-GaAj7œ,œnameœ:œtoolœ,œoutput_typesœ:[œToolœ]}-FinanceAgent-nLbOx{œfieldNameœ:œtoolsœ,œidœ:œFinanceAgent-nLbOxœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "source": "YahooDividendTool-GaAj7",
+        "sourceHandle": "{œdataTypeœ:œYahooDividendToolœ,œidœ:œYahooDividendTool-GaAj7œ,œnameœ:œtoolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "FinanceAgent-nLbOx",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œFinanceAgent-nLbOxœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "id": "ChatInput-oO5uP",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Textový vstup z Playgroundu.",
+            "display_name": "Chat Input",
+            "documentation": "",
+            "edited": true,
+            "field_order": [
+              "input_value",
+              "sender_name",
+              "session_id"
+            ],
+            "frozen": false,
+            "icon": "MessagesSquare",
+            "legacy": false,
+            "lf_version": "1.13.0",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Message",
+                "method": "message_response",
+                "name": "message",
+                "selected": "Message",
+                "tool_mode": false,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from lfx.custom.custom_component.component import Component\nfrom lfx.io import MessageTextInput, MultilineInput, Output\nfrom lfx.schema.message import Message\n\n\nclass ChatInput(Component):\n    display_name = \"Chat Input\"\n    description = \"Textový vstup z Playgroundu (jako u chatovacího modelu).\"\n    icon = \"MessagesSquare\"\n    name = \"ChatInput\"\n\n    inputs = [\n        MultilineInput(name=\"input_value\", display_name=\"Text\", value=\"\", info=\"Zpráva od uživatele.\"),\n        MessageTextInput(name=\"sender_name\", display_name=\"Sender Name\", value=\"User\", advanced=True),\n        MessageTextInput(name=\"session_id\", display_name=\"Session ID\", value=\"\", advanced=True),\n    ]\n\n    outputs = [\n        Output(display_name=\"Message\", name=\"message\", method=\"message_response\"),\n    ]\n\n    def _resolve_session(self) -> str:\n        if self.session_id:\n            return self.session_id\n        try:\n            return self.graph.session_id or \"\"\n        except Exception:  # noqa: BLE001\n            return \"\"\n\n    async def message_response(self) -> Message:\n        session_id = self._resolve_session()\n        message = Message(\n            text=self.input_value,\n            sender=\"User\",\n            sender_name=self.sender_name,\n            session_id=session_id,\n        )\n        if session_id:\n            try:\n                message = await self.send_message(message)\n            except Exception:  # noqa: BLE001\n                pass\n        self.status = message\n        return message\n"
+              },
+              "input_value": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Text",
+                "dynamic": false,
+                "info": "Zpráva od uživatele.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "User"
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "ChatInput"
+        },
+        "dragging": false,
+        "id": "ChatInput-oO5uP",
+        "measured": {
+          "height": 207,
+          "width": 320
+        },
+        "position": {
+          "x": 3876.2185942905007,
+          "y": 1015.6825843275167
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "PostgresChatMemory-eFGxv",
+          "node": {
+            "base_classes": [
+              "Memory"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Ukládá a načítá kontext konverzace (user + assistant) z PostgreSQL.",
+            "display_name": "Postgres Chat Memory",
+            "documentation": "",
+            "edited": true,
+            "field_order": [
+              "connection_string",
+              "user_id",
+              "table_name",
+              "history_limit"
+            ],
+            "frozen": false,
+            "icon": "Database",
+            "legacy": false,
+            "lf_version": "1.13.0",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Memory",
+                "method": "build_memory",
+                "name": "memory",
+                "selected": "Memory",
+                "tool_mode": false,
+                "types": [
+                  "Memory"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import re\n\nfrom langchain_core.chat_history import BaseChatMessageHistory\nfrom langchain_core.messages import AIMessage, HumanMessage\nfrom lfx.custom.custom_component.component import Component\nfrom lfx.io import IntInput, MessageTextInput, Output, SecretStrInput, StrInput\nfrom sqlalchemy import create_engine, text\n\n\nclass PostgresChatMemory(Component):\n    display_name = \"Postgres Chat Memory\"\n    description = \"Ukládá a načítá kontext konverzace (user + assistant) z PostgreSQL.\"\n    icon = \"Database\"\n    name = \"PostgresChatMemory\"\n\n    inputs = [\n        SecretStrInput(\n            name=\"connection_string\",\n            display_name=\"Postgres Connection String\",\n            value=\"postgresql://postgres:postgres@localhost:5432/langflow\",\n            info=\"Např. postgresql://uzivatel:heslo@localhost:5432/databaze (ovladač se doplní automaticky)\",\n            required=True,\n        ),\n        MessageTextInput(\n            name=\"user_id\",\n            display_name=\"User ID\",\n            value=\"default_user\",\n            info=\"Pod tímto ID se ukládá kontext. Stejné ID = navázání na předchozí konverzaci.\",\n        ),\n        StrInput(name=\"table_name\", display_name=\"Table Name\", value=\"chat_history\", advanced=True),\n        IntInput(name=\"history_limit\", display_name=\"Počet zpráv z historie\", value=20),\n    ]\n\n    outputs = [\n        Output(display_name=\"Memory\", name=\"memory\", method=\"build_memory\", types=[\"Memory\"]),\n    ]\n\n    @staticmethod\n    def _install_pg8000() -> str:\n        \"\"\"Nainstaluje čistě pythonový ovladač pg8000 do Pythonu, na kterém běží Langflow.\"\"\"\n        import importlib\n        import importlib.util\n        import os\n        import shutil\n        import subprocess\n        import sys\n\n        py = sys.executable\n        attempts = []\n        if importlib.util.find_spec(\"pip\"):\n            attempts.append([py, \"-m\", \"pip\", \"install\", \"pg8000\"])\n        if importlib.util.find_spec(\"uv\"):\n            attempts.append([py, \"-m\", \"uv\", \"pip\", \"install\", \"--python\", py, \"pg8000\"])\n        uv_candidates = [\n            shutil.which(\"uv\"),\n            os.path.join(os.path.dirname(py), \"uv\"),\n            os.path.expanduser(\"~/.local/bin/uv\"),\n            os.path.expanduser(\"~/.cargo/bin/uv\"),\n            \"/opt/homebrew/bin/uv\",\n            \"/usr/local/bin/uv\",\n        ]\n        for uv in uv_candidates:\n            if uv and os.path.isfile(uv):\n                attempts.append([uv, \"pip\", \"install\", \"--python\", py, \"pg8000\"])\n        attempts.append([py, \"-m\", \"ensurepip\", \"--upgrade\"])\n        attempts.append([py, \"-m\", \"pip\", \"install\", \"pg8000\"])\n\n        log = []\n        for cmd in attempts:\n            try:\n                r = subprocess.run(cmd, capture_output=True, text=True, timeout=300, check=False)\n            except Exception as e:  # noqa: BLE001\n                log.append(f\"{' '.join(cmd)} -> {e}\")\n                continue\n            importlib.invalidate_caches()\n            if importlib.util.find_spec(\"pg8000\"):\n                return \"pg8000 nainstalován\"\n            if cmd[-1] != \"--upgrade\":\n                log.append(f\"{' '.join(cmd)} -> {(r.stderr or r.stdout).strip()[-300:]}\")\n        msg = (\n            \"Nepodařilo se automaticky nainstalovat ovladač pg8000 do Langflow (\"\n            + py\n            + \"). Detaily: \"\n            + \" | \".join(log)\n        )\n        raise ImportError(msg)\n\n    def _with_available_driver(self, url: str) -> str:\n        \"\"\"Použije ovladač Postgresu, který je v Langflow k dispozici; když žádný není, nainstaluje pg8000.\"\"\"\n        import importlib.util\n\n        url = (url or \"\").strip()\n        scheme, sep, rest = url.partition(\"://\")\n        if not sep or not scheme.startswith(\"postgres\"):\n            return url\n        wanted = scheme.split(\"+\", 1)[1] if \"+\" in scheme else None\n        drivers = {\"psycopg2\": \"psycopg2\", \"psycopg\": \"psycopg\", \"pg8000\": \"pg8000\"}\n        if wanted in drivers and importlib.util.find_spec(drivers[wanted]):\n            return url\n        for name, module in drivers.items():\n            if importlib.util.find_spec(module):\n                return f\"postgresql+{name}://{rest}\"\n        self._install_pg8000()\n        return f\"postgresql+pg8000://{rest}\"\n\n    def build_memory(self):\n        table = (self.table_name or \"chat_history\").strip()\n        if not re.fullmatch(r\"[A-Za-z_][A-Za-z0-9_]*\", table):\n            msg = \"Neplatný název tabulky.\"\n            raise ValueError(msg)\n        engine = create_engine(self._with_available_driver(self.connection_string), pool_pre_ping=True)\n        limit = int(self.history_limit or 20)\n\n        class PostgresHistory(BaseChatMessageHistory):\n            def __init__(self, session_id: str):\n                self.session_id = session_id\n\n            @property\n            def messages(self):\n                with engine.connect() as conn:\n                    rows = conn.execute(\n                        text(\n                            f\"SELECT role, content FROM {table} \"\n                            \"WHERE session_id = :sid ORDER BY id DESC LIMIT :lim\"\n                        ),\n                        {\"sid\": self.session_id, \"lim\": limit},\n                    ).fetchall()\n                return [\n                    HumanMessage(content=c) if r == \"user\" else AIMessage(content=c) for r, c in reversed(rows)\n                ]\n\n            def add_messages(self, messages) -> None:\n                rows = []\n                for m in messages:\n                    if isinstance(m, HumanMessage):\n                        rows.append({\"sid\": self.session_id, \"role\": \"user\", \"content\": str(m.content)})\n                    elif isinstance(m, AIMessage) and m.content:\n                        rows.append({\"sid\": self.session_id, \"role\": \"assistant\", \"content\": str(m.content)})\n                if rows:\n                    with engine.begin() as conn:\n                        conn.execute(\n                            text(f\"INSERT INTO {table} (session_id, role, content) VALUES (:sid, :role, :content)\"),\n                            rows,\n                        )\n\n            def clear(self) -> None:\n                with engine.begin() as conn:\n                    conn.execute(text(f\"DELETE FROM {table} WHERE session_id = :sid\"), {\"sid\": self.session_id})\n\n        with engine.begin() as conn:\n            conn.execute(\n                text(\n                    f\"CREATE TABLE IF NOT EXISTS {table} (\"\n                    \"id BIGSERIAL PRIMARY KEY, \"\n                    \"session_id TEXT NOT NULL, \"\n                    \"role TEXT NOT NULL CHECK (role IN ('user', 'assistant')), \"\n                    \"content TEXT NOT NULL, \"\n                    \"created_at TIMESTAMPTZ NOT NULL DEFAULT now())\"\n                )\n            )\n            conn.execute(text(f\"CREATE INDEX IF NOT EXISTS {table}_session_idx ON {table} (session_id, id)\"))\n\n        history = PostgresHistory((self.user_id or \"\").strip())\n        self.status = f\"Tabulka: {table}, user: {history.session_id or '(session z Playgroundu)'}\"\n        return history\n"
+              },
+              "connection_string": {
+                "_input_type": "SecretStrInput",
+                "advanced": false,
+                "display_name": "Postgres Connection String",
+                "dynamic": false,
+                "info": "Např. postgresql://uzivatel:heslo@localhost:5432/databaze (ovladač se doplní automaticky)",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "connection_string",
+                "password": true,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "history_limit": {
+                "_input_type": "IntInput",
+                "advanced": false,
+                "display_name": "Počet zpráv z historie",
+                "dynamic": false,
+                "info": "",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "history_limit",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 20
+              },
+              "table_name": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Table Name",
+                "dynamic": false,
+                "info": "",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "table_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "chat_history"
+              },
+              "user_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "User ID",
+                "dynamic": false,
+                "info": "Pod tímto ID se ukládá kontext. Stejné ID = navázání na předchozí konverzaci.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "user_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "default_user"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "PostgresChatMemory"
+        },
+        "dragging": false,
+        "id": "PostgresChatMemory-eFGxv",
+        "measured": {
+          "height": 387,
+          "width": 320
+        },
+        "position": {
+          "x": 3889.9433072843394,
+          "y": 1858.0718694308484
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "YahooStockPriceTool-Cp7R3",
+          "node": {
+            "base_classes": [
+              "Tool"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Nástroj pro agenta: aktuální cena akcie z Yahoo Finance.",
+            "display_name": "Yahoo Finance: cena akcie",
+            "documentation": "",
+            "edited": true,
+            "field_order": [],
+            "frozen": false,
+            "icon": "TrendingUp",
+            "legacy": false,
+            "lf_version": "1.13.0",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Tool",
+                "method": "build_tool",
+                "name": "tool",
+                "selected": "Tool",
+                "tool_mode": false,
+                "types": [
+                  "Tool"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import json\nfrom datetime import datetime, timezone\n\nimport httpx\nfrom langchain_core.tools import StructuredTool\nfrom lfx.custom.custom_component.component import Component\nfrom lfx.field_typing import Tool\nfrom lfx.io import Output\nfrom pydantic import BaseModel, Field\n\n\nclass YahooStockPriceTool(Component):\n    display_name = \"Yahoo Finance: cena akcie\"\n    description = \"Nástroj pro agenta: aktuální cena akcie z Yahoo Finance.\"\n    icon = \"TrendingUp\"\n    name = \"YahooStockPriceTool\"\n\n    inputs = []\n\n    outputs = [\n        Output(display_name=\"Tool\", name=\"tool\", method=\"build_tool\"),\n    ]\n\n    def build_tool(self) -> Tool:\n        class StockPriceArgs(BaseModel):\n            ticker: str = Field(..., description=\"Ticker akcie na Yahoo Finance, např. AAPL, MSFT, CEZ.PR\")\n\n        def get_stock_price(ticker: str) -> str:\n            symbol = ticker.strip().upper()\n            try:\n                r = httpx.get(\n                    f\"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}\",\n                    params={\"range\": \"5d\", \"interval\": \"1d\"},\n                    headers={\"User-Agent\": \"Mozilla/5.0\"},\n                    timeout=15,\n                )\n                payload = r.json()\n            except Exception as e:  # noqa: BLE001\n                return json.dumps({\"ticker\": symbol, \"error\": f\"Yahoo Finance nedostupné: {e}\"}, ensure_ascii=False)\n\n            chart = payload.get(\"chart\", {})\n            if chart.get(\"error\") or not chart.get(\"result\"):\n                return json.dumps({\"ticker\": symbol, \"error\": \"Ticker nenalezen nebo bez dat.\"}, ensure_ascii=False)\n\n            meta = chart[\"result\"][0].get(\"meta\", {})\n            price = meta.get(\"regularMarketPrice\")\n            prev = meta.get(\"chartPreviousClose\") or meta.get(\"previousClose\")\n            data = {\n                \"ticker\": symbol,\n                \"name\": meta.get(\"longName\") or meta.get(\"shortName\"),\n                \"price\": price,\n                \"previous_close\": prev,\n                \"currency\": meta.get(\"currency\"),\n                \"day_high\": meta.get(\"regularMarketDayHigh\"),\n                \"day_low\": meta.get(\"regularMarketDayLow\"),\n                \"exchange\": meta.get(\"exchangeName\"),\n            }\n            if meta.get(\"regularMarketTime\"):\n                data[\"as_of\"] = datetime.fromtimestamp(meta[\"regularMarketTime\"], tz=timezone.utc).strftime(\n                    \"%Y-%m-%d %H:%M UTC\"\n                )\n            if price and prev:\n                data[\"change_percent\"] = round((price / prev - 1) * 100, 2)\n            return json.dumps(data, ensure_ascii=False)\n\n        return StructuredTool.from_function(\n            func=get_stock_price,\n            name=\"get_stock_price\",\n            description=\"Vrátí aktuální cenu akcie, předchozí uzavírací cenu, denní změnu a měnu \"\n            \"podle tickeru z Yahoo Finance.\",\n            args_schema=StockPriceArgs,\n        )\n"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "YahooStockPriceTool"
+        },
+        "dragging": false,
+        "id": "YahooStockPriceTool-Cp7R3",
+        "measured": {
+          "height": 141,
+          "width": 320
+        },
+        "position": {
+          "x": 3886.51212903588,
+          "y": 1382.240811837458
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "YahooDividendTool-GaAj7",
+          "node": {
+            "base_classes": [
+              "Tool"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Nástroj pro agenta: výše a historie dividend z Yahoo Finance.",
+            "display_name": "Yahoo Finance: dividendy",
+            "documentation": "",
+            "edited": true,
+            "field_order": [],
+            "frozen": false,
+            "icon": "Coins",
+            "legacy": false,
+            "lf_version": "1.13.0",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Tool",
+                "method": "build_tool",
+                "name": "tool",
+                "selected": "Tool",
+                "tool_mode": false,
+                "types": [
+                  "Tool"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import json\nfrom collections import defaultdict\nfrom datetime import datetime, timedelta, timezone\n\nimport httpx\nfrom langchain_core.tools import StructuredTool\nfrom lfx.custom.custom_component.component import Component\nfrom lfx.field_typing import Tool\nfrom lfx.io import Output\nfrom pydantic import BaseModel, Field\n\n\nclass YahooDividendTool(Component):\n    display_name = \"Yahoo Finance: dividendy\"\n    description = \"Nástroj pro agenta: výše a historie dividend z Yahoo Finance.\"\n    icon = \"Coins\"\n    name = \"YahooDividendTool\"\n\n    inputs = []\n\n    outputs = [\n        Output(display_name=\"Tool\", name=\"tool\", method=\"build_tool\"),\n    ]\n\n    def build_tool(self) -> Tool:\n        class DividendArgs(BaseModel):\n            ticker: str = Field(..., description=\"Ticker akcie na Yahoo Finance, např. AAPL, KO, CEZ.PR\")\n            years: int = Field(5, description=\"Kolik let historie dividend vrátit (1-20).\")\n\n        def get_dividends(ticker: str, years: int = 5) -> str:\n            symbol = ticker.strip().upper()\n            years = max(1, min(int(years or 5), 20))\n            try:\n                r = httpx.get(\n                    f\"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}\",\n                    params={\"range\": f\"{years}y\", \"interval\": \"1mo\", \"events\": \"div\"},\n                    headers={\"User-Agent\": \"Mozilla/5.0\"},\n                    timeout=15,\n                )\n                payload = r.json()\n            except Exception as e:  # noqa: BLE001\n                return json.dumps({\"ticker\": symbol, \"error\": f\"Yahoo Finance nedostupné: {e}\"}, ensure_ascii=False)\n\n            chart = payload.get(\"chart\", {})\n            if chart.get(\"error\") or not chart.get(\"result\"):\n                return json.dumps({\"ticker\": symbol, \"error\": \"Ticker nenalezen nebo bez dat.\"}, ensure_ascii=False)\n\n            result = chart[\"result\"][0]\n            meta = result.get(\"meta\", {})\n            raw = (result.get(\"events\") or {}).get(\"dividends\") or {}\n            payments = sorted(\n                (\n                    datetime.fromtimestamp(int(d.get(\"date\", ts)), tz=timezone.utc),\n                    float(d.get(\"amount\", 0)),\n                )\n                for ts, d in raw.items()\n            )\n            price = meta.get(\"regularMarketPrice\")\n            data = {\"ticker\": symbol, \"currency\": meta.get(\"currency\"), \"current_price\": price}\n            if not payments:\n                data[\"payments\"] = []\n                data[\"note\"] = \"Za zvolené období nebyly nalezeny žádné dividendy.\"\n                return json.dumps(data, ensure_ascii=False)\n\n            year_ago = datetime.now(tz=timezone.utc) - timedelta(days=365)\n            ttm = sum(a for d, a in payments if d >= year_ago)\n            per_year = defaultdict(float)\n            for d, a in payments:\n                per_year[str(d.year)] += a\n\n            data.update(\n                {\n                    \"payments\": [{\"date\": d.strftime(\"%Y-%m-%d\"), \"amount\": round(a, 4)} for d, a in payments],\n                    \"last_payment\": {\"date\": payments[-1][0].strftime(\"%Y-%m-%d\"), \"amount\": round(payments[-1][1], 4)},\n                    \"dividends_last_12_months\": round(ttm, 4),\n                    \"sum_per_year\": {y: round(v, 4) for y, v in sorted(per_year.items())},\n                }\n            )\n            if price:\n                data[\"trailing_yield_percent\"] = round(ttm / price * 100, 2)\n            return json.dumps(data, ensure_ascii=False)\n\n        return StructuredTool.from_function(\n            func=get_dividends,\n            name=\"get_dividends\",\n            description=\"Vrátí výši dividend akcie: jednotlivé výplaty, poslední výplatu, součet za \"\n            \"posledních 12 měsíců, roční součty a dividendový výnos.\",\n            args_schema=DividendArgs,\n        )\n"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "YahooDividendTool"
+        },
+        "dragging": false,
+        "id": "YahooDividendTool-GaAj7",
+        "measured": {
+          "height": 141,
+          "width": 320
+        },
+        "position": {
+          "x": 3903.6680202781795,
+          "y": 1595.9655248312977
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "FinanceAgent-nLbOx",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "OpenAI agent ve smyčce: v každém kroku se rozhodne, jestli zavolá nástroj, nebo vrátí finální odpověď.",
+            "display_name": "Finance Agent (tool loop)",
+            "documentation": "",
+            "edited": true,
+            "field_order": [
+              "input_value",
+              "tools",
+              "memory",
+              "api_key",
+              "model_name",
+              "system_prompt",
+              "max_iterations",
+              "base_url"
+            ],
+            "frozen": false,
+            "icon": "Bot",
+            "legacy": false,
+            "lf_version": "1.13.0",
+            "metadata": {
+              "code_hash": "d5d09a90430f",
+              "component_class_name": "FinanceAgent",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "langchain_core",
+                    "version": "1.5.1"
+                  },
+                  {
+                    "name": "langchain_openai",
+                    "version": "1.4.1"
+                  },
+                  {
+                    "name": "lfx",
+                    "version": "1.13.0"
+                  }
+                ],
+                "total_dependencies": 3
+              },
+              "module": "custom_components.finance_agent_tool_loop"
+            },
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Response",
+                "group_outputs": false,
+                "hidden": null,
+                "loop_types": null,
+                "method": "run_agent",
+                "name": "response",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "api_key": {
+                "_input_type": "SecretStrInput",
+                "advanced": false,
+                "api_editable": false,
+                "display_name": "OpenAI API Key",
+                "dynamic": false,
+                "info": "",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "api_key",
+                "override_skip": false,
+                "password": true,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "base_url": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "api_editable": false,
+                "display_name": "OpenAI Base URL",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "base_url",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "code": {
+                "advanced": true,
+                "api_editable": false,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import json\n\nfrom langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage\nfrom langchain_openai import ChatOpenAI\nfrom lfx.custom.custom_component.component import Component\nfrom lfx.io import DropdownInput, HandleInput, IntInput, MultilineInput, Output, SecretStrInput, StrInput\nfrom lfx.schema.message import Message\n\n\nclass FinanceAgent(Component):\n    display_name = \"Finance Agent (tool loop)\"\n    description = (\n        \"OpenAI agent ve smyčce: v každém kroku se rozhodne, jestli zavolá nástroj, \"\n        \"nebo vrátí finální odpověď.\"\n    )\n    icon = \"Bot\"\n    name = \"FinanceAgent\"\n\n    inputs = [\n        HandleInput(name=\"input_value\", display_name=\"Input\", input_types=[\"Message\"], required=True),\n        HandleInput(name=\"tools\", display_name=\"Tools\", input_types=[\"Tool\"], is_list=True),\n        HandleInput(name=\"memory\", display_name=\"Memory\", input_types=[\"Memory\"]),\n        SecretStrInput(name=\"api_key\", display_name=\"OpenAI API Key\", value=\"\", required=True),\n        DropdownInput(\n            name=\"model_name\",\n            display_name=\"Model\",\n            options=[\"gpt-4o\"],\n            value=\"gpt-4o\",\n            combobox=True,\n            info=\"Můžeš vybrat ze seznamu nebo napsat jiný název modelu.\",\n        ),\n        MultilineInput(\n            name=\"system_prompt\",\n            display_name=\"Instrukce agenta\",\n            value=(\n                \"Jsi finanční asistent. Máš k dispozici nástroje get_stock_price (aktuální cena akcie) \"\n                \"a get_dividends (výše a historie dividend) z Yahoo Finance. \"\n                \"Rozhodni se, jestli k odpovědi potřebuješ nástroj. Pokud ano, zavolej ho (i víckrát), \"\n                \"pokud ne, odpověz rovnou. Nevymýšlej si čísla, která jsi nezískal z nástroje. \"\n                \"Odpovídej v jazyce uživatele a uváděj měnu.\"\n            ),\n        ),\n        IntInput(\n            name=\"max_iterations\",\n            display_name=\"Max. počet kroků\",\n            value=6,\n            info=\"Maximální počet průchodů smyčkou (volání nástrojů) před vynucenou odpovědí.\",\n        ),\n        StrInput(name=\"base_url\", display_name=\"OpenAI Base URL\", value=\"\", advanced=True),\n    ]\n\n    outputs = [\n        Output(display_name=\"Response\", name=\"response\", method=\"run_agent\"),\n    ]\n\n    @staticmethod\n    def _to_text(content) -> str:\n        if isinstance(content, str):\n            return content\n        if isinstance(content, list):\n            parts = []\n            for block in content:\n                if isinstance(block, str):\n                    parts.append(block)\n                elif isinstance(block, dict) and block.get(\"type\") == \"text\":\n                    parts.append(block.get(\"text\", \"\"))\n            return \"\".join(parts)\n        return str(content)\n\n    async def run_agent(self) -> Message:\n        incoming = self.input_value\n        user_text = incoming.text if isinstance(incoming, Message) else str(incoming)\n        session_id = getattr(incoming, \"session_id\", \"\") or \"\"\n\n        raw_tools = self.tools if isinstance(self.tools, list) else [self.tools]\n        tools = [t for t in raw_tools if t is not None]\n        tool_map = {t.name: t for t in tools}\n\n        llm = ChatOpenAI(model=self.model_name, api_key=self.api_key, base_url=self.base_url or None)\n        llm_with_tools = llm.bind_tools(tools) if tools else llm\n\n        memory = self.memory\n        if memory is not None and not getattr(memory, \"session_id\", \"\"):\n            memory.session_id = session_id or \"default_user\"\n        history = list(memory.messages) if memory is not None else []\n\n        messages = [SystemMessage(content=self.system_prompt), *history, HumanMessage(content=user_text)]\n        trace = []\n        final_text = None\n\n        # Smyčka agenta: model -> (nástroj -> model)* -> odpověď\n        for _ in range(max(1, int(self.max_iterations or 6))):\n            ai = await llm_with_tools.ainvoke(messages)\n            messages.append(ai)\n            if not getattr(ai, \"tool_calls\", None):\n                final_text = self._to_text(ai.content)\n                break\n            for call in ai.tool_calls:\n                tool = tool_map.get(call[\"name\"])\n                try:\n                    result = await tool.ainvoke(call[\"args\"]) if tool else f\"Neznámý nástroj: {call['name']}\"\n                except Exception as e:  # noqa: BLE001\n                    result = f\"Chyba nástroje: {e}\"\n                trace.append(f\"{call['name']}({json.dumps(call['args'], ensure_ascii=False)})\")\n                messages.append(ToolMessage(content=str(result), tool_call_id=call[\"id\"]))\n\n        if final_text is None:\n            messages.append(HumanMessage(content=\"Dosažen limit kroků. Odpověz teď s informacemi, které máš.\"))\n            ai = await llm.ainvoke(messages)\n            final_text = self._to_text(ai.content)\n\n        if memory is not None:\n            memory.add_messages([HumanMessage(content=user_text), AIMessage(content=final_text)])\n\n        self.status = \"Použité nástroje: \" + (\", \".join(trace) if trace else \"žádné\")\n        return Message(text=final_text, sender=\"Machine\", session_id=session_id)\n"
+              },
+              "input_value": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "api_editable": false,
+                "display_name": "Input",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_value",
+                "override_skip": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "other",
+                "value": ""
+              },
+              "max_iterations": {
+                "_input_type": "IntInput",
+                "advanced": false,
+                "api_editable": false,
+                "display_name": "Max. počet kroků",
+                "dynamic": false,
+                "info": "Maximální počet průchodů smyčkou (volání nástrojů) před vynucenou odpovědí.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_iterations",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "int",
+                "value": 6
+              },
+              "memory": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "api_editable": false,
+                "display_name": "Memory",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Memory"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "memory",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "other",
+                "value": ""
+              },
+              "model_name": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "api_editable": false,
+                "combobox": true,
+                "dialog_inputs": {},
+                "display_name": "Model",
+                "dynamic": false,
+                "external_options": {},
+                "info": "Můžeš vybrat ze seznamu nebo napsat jiný název modelu.",
+                "load_from_db": false,
+                "name": "model_name",
+                "options": [
+                  "gpt-4o"
+                ],
+                "options_metadata": [],
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "str",
+                "value": "gpt-4o"
+              },
+              "system_prompt": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "ai_enabled": false,
+                "api_editable": false,
+                "copy_field": false,
+                "display_name": "Instrukce agenta",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "system_prompt",
+                "override_skip": false,
+                "password": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "Jsi finanční asistent. Máš k dispozici nástroje get_stock_price (aktuální cena akcie) a get_dividends (výše a historie dividend) z Yahoo Finance. Rozhodni se, jestli k odpovědi potřebuješ nástroj. Pokud ano, zavolej ho (i víckrát), pokud ne, odpověz rovnou. Nevymýšlej si čísla, která jsi nezískal z nástroje. Odpovídej v jazyce uživatele a uváděj měnu."
+              },
+              "tools": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "api_editable": false,
+                "display_name": "Tools",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Tool"
+                ],
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "tools",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "other",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "FinanceAgent"
+        },
+        "id": "FinanceAgent-nLbOx",
+        "measured": {
+          "height": 617,
+          "width": 320
+        },
+        "position": {
+          "x": 4397.301494575925,
+          "y": 1341.1685057936324
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ChatOutput-2IR4K",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Textová odpověď agenta do Playgroundu.",
+            "display_name": "Chat Output",
+            "documentation": "",
+            "edited": true,
+            "field_order": [
+              "input_value",
+              "sender_name",
+              "session_id"
+            ],
+            "frozen": false,
+            "icon": "MessagesSquare",
+            "legacy": false,
+            "lf_version": "1.13.0",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Message",
+                "method": "message_response",
+                "name": "message",
+                "selected": "Message",
+                "tool_mode": false,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from lfx.custom.custom_component.component import Component\nfrom lfx.io import HandleInput, MessageTextInput, Output\nfrom lfx.schema.message import Message\n\n\nclass ChatOutput(Component):\n    display_name = \"Chat Output\"\n    description = \"Textová odpověď agenta do Playgroundu.\"\n    icon = \"MessagesSquare\"\n    name = \"ChatOutput\"\n\n    inputs = [\n        HandleInput(name=\"input_value\", display_name=\"Text\", input_types=[\"Message\"], required=True),\n        MessageTextInput(name=\"sender_name\", display_name=\"Sender Name\", value=\"AI\", advanced=True),\n        MessageTextInput(name=\"session_id\", display_name=\"Session ID\", value=\"\", advanced=True),\n    ]\n\n    outputs = [\n        Output(display_name=\"Message\", name=\"message\", method=\"message_response\"),\n    ]\n\n    async def message_response(self) -> Message:\n        value = self.input_value\n        text = value.text if isinstance(value, Message) else str(value)\n        session_id = self.session_id or (getattr(value, \"session_id\", \"\") or \"\")\n        if not session_id:\n            try:\n                session_id = self.graph.session_id or \"\"\n            except Exception:  # noqa: BLE001\n                session_id = \"\"\n        message = Message(text=text, sender=\"Machine\", sender_name=self.sender_name, session_id=session_id)\n        if session_id:\n            try:\n                message = await self.send_message(message)\n            except Exception:  # noqa: BLE001\n                pass\n        self.status = message\n        return message\n"
+              },
+              "input_value": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Text",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_value",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "AI"
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "ChatOutput"
+        },
+        "dragging": false,
+        "id": "ChatOutput-2IR4K",
+        "measured": {
+          "height": 169,
+          "width": 320
+        },
+        "position": {
+          "x": 4922.139520753886,
+          "y": 1785.4300567224334
+        },
+        "selected": false,
+        "type": "genericNode"
+      }
+    ],
+    "viewport": {
+      "x": -3070.8897936173958,
+      "y": -1014.3224053367576,
+      "zoom": 0.8743352232856574
+    }
+  },
+  "description": "",
+  "endpoint_name": null,
+  "id": "c1da9e2c-7954-4b44-91b2-621c4f2a65ea",
+  "is_component": false,
+  "last_tested_version": "1.13.0",
+  "locked": false,
+  "name": "Financial_agent",
+  "tags": []
+}
